@@ -1,6 +1,6 @@
 import httpx
 
-BASE_URL = "http://localhost:3000/api/v1"
+BASE_URL = "http://localhost:8000/api/v1"
 
 
 def get_all_products_func(page: int = 1, limit: int = 20) -> list:
