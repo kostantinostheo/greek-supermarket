@@ -30,7 +30,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'REPLACE_WITH_GITHUB_EDIT_URL',
+          editUrl: 'https://github.com/kostantinostheo/greek-supermarket/tree/main/docs/',
         },
         blog: false,
         theme: {
