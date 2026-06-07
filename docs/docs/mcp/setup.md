@@ -35,7 +35,7 @@ pip install -r requirements.txt
   "mcpServers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
@@ -50,7 +50,7 @@ pip install -r requirements.txt
   "mcpServers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
@@ -65,7 +65,7 @@ pip install -r requirements.txt
   "mcpServers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
@@ -80,7 +80,7 @@ pip install -r requirements.txt
   "mcpServers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
@@ -95,7 +95,7 @@ pip install -r requirements.txt
   "servers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
@@ -110,12 +110,12 @@ pip install -r requirements.txt
   "context_servers": {
     "greek-supermarket": {
       "command": "python3",
-      "args": ["/path/to/marketgr/mcp/mcp_server.py"]
+      "args": ["/path/to/greek-supermarket/mcp/mcp_server.py"]
     }
   }
 }
 ```
 
 :::tip
-Replace `/path/to/marketgr/` with the actual path on your machine. If using a virtual environment, point to that Python binary instead.
+Replace `/path/to/greek-supermarket/` with the actual path on your machine. If using a virtual environment, point to that Python binary instead.
 :::
