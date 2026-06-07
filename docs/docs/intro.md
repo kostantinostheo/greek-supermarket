@@ -14,7 +14,14 @@ slug: /intro
 
 ## Quick Start
 
-### 1. Start the API
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/kostantinostheo/greek-supermarket.git
+cd greek-supermarket
+```
+
+### 2. Start the API
 
 ```bash
 cd api
@@ -24,7 +31,7 @@ npm start
 
 The API runs on `http://localhost:8000` by default. Interactive API documentation (Swagger UI) is available at [http://localhost:8000/api-docs/](http://localhost:8000/api-docs/#/).
 
-### 2. Use the MCP Server
+### 3. Use the MCP Server
 
 ```bash
 cd mcp
