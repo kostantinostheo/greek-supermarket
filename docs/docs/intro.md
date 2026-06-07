@@ -7,6 +7,10 @@ slug: /intro
 
 **Greek Supermarket** is an open-source project that provides price transparency for Greek supermarket products. It aggregates publicly available pricing data and exposes it through a clean REST API and an MCP (Model Context Protocol) server.
 
+## Architecture
+
+![Architecture Overview](/img/architecture.svg)
+
 ## What's included
 
 - **REST API** - Express.js server with endpoints for products, categories, merchants, and search
