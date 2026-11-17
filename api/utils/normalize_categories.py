@@ -1,6 +1,6 @@
-// Normalize supermarket categories into parent categories
+# Normalize supermarket categories into parent categories
 
-const CATEGORY_MAPPINGS = {
+CATEGORY_MAPPINGS = {
     "Φρούτα & Λαχανικά": [
       "φρούτα",
       "λαχανικά",
@@ -225,18 +225,14 @@ const CATEGORY_MAPPINGS = {
       "ταμπόν",
       "ωτοκαθαριστές"
     ]
-  };
-  
-  export function normalizeCategory(category) {
-    const normalized = category.toLowerCase();
-  
-    for (const [parent, keywords] of Object.entries(CATEGORY_MAPPINGS)) {
-      if (keywords.some(keyword => normalized.includes(keyword))) {
-        return parent;
-      }
-    }
-  
-    return category;
   }
 
-  
+
+def normalize_category(category):
+    normalized = category.lower()
+
+    for parent, keywords in CATEGORY_MAPPINGS.items():
+        if any(keyword in normalized for keyword in keywords):
+            return parent
+
+    return category

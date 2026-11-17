@@ -1,18 +1,16 @@
-# npm
-node_modules
-package-lock.json
-npm-shrinkwrap.json
-*.log
-*.gz
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Yarn
-yarn-error.log
-yarn.lock
+# uv / virtual environments
+.venv/
+.python-version
 
-# Coveralls
-.nyc_output
-coverage
-
-# Benchmarking
-benchmarks/graphs
+# Env
 .env
+
+*.log
+.DS_Store
