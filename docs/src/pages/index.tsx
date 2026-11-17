@@ -33,7 +33,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Home"
-      description="Greek Supermarket Price Transparency API and MCP Server">
+      description="Greek Supermarket Price Transparency API and Agent Skill">
       <HomepageHeader />
     </Layout>
   );

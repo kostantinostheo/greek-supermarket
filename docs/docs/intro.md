@@ -5,7 +5,7 @@ slug: /intro
 
 # Introduction
 
-**Greek Supermarket** is an open-source project that provides price transparency for Greek supermarket products. It aggregates publicly available pricing data and exposes it through a clean REST API and an MCP (Model Context Protocol) server.
+**Greek Supermarket** is an open-source project that provides price transparency for Greek supermarket products. It aggregates publicly available pricing data and exposes it through a clean REST API and an Agent Skill for AI assistants.
 
 ## Architecture
 
@@ -13,8 +13,8 @@ slug: /intro
 
 ## What's included
 
-- **REST API** - Express.js server with endpoints for products, categories, merchants, and search
-- **MCP Server** - Connect AI assistants (Claude, Cursor, VS Code Copilot, etc.) directly to Greek supermarket data
+- **REST API** - FastAPI server with endpoints for products, categories, merchants, and search
+- **Agent Skill** - Lets AI assistants (Claude Code and other skill-compatible agents) look up and compare Greek supermarket prices
 
 ## Quick Start
 
@@ -25,25 +25,27 @@ git clone https://github.com/kostantinostheo/greek-supermarket.git
 cd greek-supermarket
 ```
 
-### 2. Start the API
+### 2. Use the Agent Skill
+
+Link the skill into your agent's skills folder (requires [uv](https://docs.astral.sh/uv/)):
+
+```bash
+ln -s "$(pwd)/skills/greek-supermarket" ~/.claude/skills/greek-supermarket
+```
+
+See [Install the Agent Skill](./skill/install) for details and the available commands.
+
+### 3. Run the REST API (optional)
+
+The API is a Python app managed with uv:
 
 ```bash
 cd api
-npm install
-npm start
+uv sync
+uv run server.py
 ```
 
-The API runs on `http://localhost:8000` by default. Interactive API documentation (Swagger UI) is available at [http://localhost:8000/api-docs/](http://localhost:8000/api-docs/#/).
-
-### 3. Use the MCP Server
-
-```bash
-cd mcp
-pip install -r requirements.txt
-python3 mcp_server.py
-```
-
-See the [MCP Setup guide](./mcp/setup) for connecting it to your AI assistant.
+The API runs on `http://localhost:8000` by default. Interactive API documentation (Swagger UI) is available at [http://localhost:8000/api-docs](http://localhost:8000/api-docs).
 
 ## Data Source
 

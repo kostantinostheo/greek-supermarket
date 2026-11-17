@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Greek Supermarket',
-  tagline: 'Greek Supermarket Price Transparency API & MCP Server',
+  tagline: 'Greek Supermarket Price Transparency API & Agent Skill',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -68,7 +68,7 @@ const config: Config = {
           items: [
             { label: 'Getting Started', to: '/docs/intro' },
             { label: 'API Reference', to: '/docs/api/products' },
-            { label: 'MCP Server', to: '/docs/mcp/setup' },
+            { label: 'Agent Skill', to: '/docs/skill/install' },
           ],
         },
       ],
